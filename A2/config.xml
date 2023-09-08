@@ -1,0 +1,28 @@
+<config>
+	<test driver="comp352.assignment.two.StructSort" method="main" label="Check Student Input Data">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="Check output original array"><regex>12 35 13 56 79 95 73 87 20 66 48 18 36 99 29</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted runs"><regex>We counted 1 DESC run of length 2</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted structuring compares"><regex>We performed 14 compares during structuring</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted overall compares"><regex>We performed 75 compares overall</regex></check>
+		</mark>
+		<mark grade="20">
+			<check label="Check properly counted swaps"><regex>We performed 55 swaps overall</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted reversals"><regex>We performed 5 reversals of runs in INCR order</regex></check>
+		</mark>
+		<mark grade="30">
+			<check label="Check output sorted array"><regex>99 95 87 79 73 66 56 48 36 35 29 20 18 13 12</regex></check>
+		</mark>
+	</test>
+
+</config>
